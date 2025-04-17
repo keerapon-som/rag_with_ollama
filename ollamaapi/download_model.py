@@ -26,7 +26,7 @@ def pull_model_stream(model_name):
                 except json.JSONDecodeError as e:
                     print(f"Invalid JSON: {line}")
 
-                    
+
 if __name__ == "__main__":
-    pull_model_stream("llama3.2:latest")
+    pull_model_stream("nomic-embed-text:latest")
     

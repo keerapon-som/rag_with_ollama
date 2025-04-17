@@ -3,14 +3,13 @@ from ollamaapi import convert_to_vec
 
 
 
-data = "Albert Einstein ?"
+data = "Is apple company have sustainability plan or not ?"
 embedingModel = "nomic-embed-text:latest"
 vector = convert_to_vec.get_embedding(
     text=data,
     model=embedingModel
 )
 
-listDocs = repo.searchClosestVector(vector, embedingModel=embedingModel, limit=1)
+listDocs = repo.searchClosestVector(vector, embedingModel=embedingModel, limit=5)
 for data in listDocs:
     print(data["document"])
-    break

@@ -16,4 +16,4 @@ def deleteModel(modelName:str):
 
 
 if __name__ == "__main__":        
-    deleteModel("llama3.2:latest")
+    deleteModel("qwen2.5:3b")

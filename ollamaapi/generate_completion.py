@@ -24,9 +24,7 @@ def genCompletion(model:str, prompt:str):
     return Fulltext
 
 if __name__ == "__main__":
-    model = "qwen2.5:3b"
-    prompt = "Why is the sky blue?"
+    model = "llama3.2:3b"
+    prompt = "Hello would na ja"
     fulltext = genCompletion(model, prompt)
-    print("- ---------------------------")
-    print(fulltext)
 

@@ -23,5 +23,8 @@ def get_embedding(text, model="nomic-embed-text:latest"):
 
 
 if __name__ == "__main__":
-    sample_text = "Ollama makes it easy to run large language models locally."
-    vector = get_embedding(sample_text)
+
+    sample_text = "Before his promotion, Parekh served as Vice President of Financial Planning and Analysis at Apple for over a decade."
+
+    vector = get_embedding(sample_text,"nomic-embed-text:latest")
+    print(len(vector))
